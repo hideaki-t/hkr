@@ -1,0 +1,23 @@
+{
+ "manifest_version": 2,
+ "name": "Hatena Keyword Remover",
+ "version": "1.4",
+ "description": "Removes Hatena Keyword Links and search keyword highlight",
+ "content_scripts": [
+    {
+      "matches": ["http://*.hatena.ne.jp/*",
+                  "http://*.hatelabo.jp/*",
+                  "http://*.hatenablog.com/*",
+                  "http://*.hateblo.jp/*",
+                  "http://*.hatenadiary.com/*",
+                  "http://*.hatenadiary.jp/*"],
+      "js": ["myscript.js"]
+    }],
+ "permissions": [
+  "http://*.hatena.ne.jp/",
+  "http://*.hatelabo.jp/*",
+  "http://*.hatenablog.com/*",
+  "http://*.hateblo.jp/*",
+  "http://*.hatenadiary.com/*",
+  "http://*.hatenadiary.jp/*"]
+}
