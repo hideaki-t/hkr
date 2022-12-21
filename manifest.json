@@ -1,12 +1,11 @@
 {
- "manifest_version": 2,
+ "manifest_version": 3,
  "name": "Hatena Keyword Remover",
- "version": "1.4",
+ "version": "1.5",
  "description": "Removes Hatena Keyword Links and search keyword highlight",
  "content_scripts": [
     {
-      "matches": ["http://*/*"],
+      "matches": ["<all_urls>"],
       "js": ["myscript.js"]
-    }],
- "permissions": ["http://*/*"]
+    }]
 }
