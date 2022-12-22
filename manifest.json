@@ -3,6 +3,10 @@
  "name": "Hatena Keyword Remover",
  "version": "1.5",
  "description": "Removes Hatena Keyword Links and search keyword highlight",
+ "icons": {
+   "96": "icon96.png",
+   "128": "icon128.png"
+ },
  "content_scripts": [
     {
       "matches": ["<all_urls>"],
