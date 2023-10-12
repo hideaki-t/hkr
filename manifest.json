@@ -1,15 +1,26 @@
 {
- "manifest_version": 3,
- "name": "Hatena Keyword Remover",
- "version": "1.5",
- "description": "Removes Hatena Keyword Links and search keyword highlight",
- "icons": {
-   "96": "icon96.png",
-   "128": "icon128.png"
- },
- "content_scripts": [
+  "manifest_version": 3,
+  "name": "Hatena Keyword Remover",
+  "version": "1.5",
+  "description": "Removes Hatena Keyword Links and search keyword highlight",
+  "icons": {
+    "96": "icon96.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
     {
-      "matches": ["<all_urls>"],
-      "js": ["myscript.js"]
-    }]
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "myscript.js"
+      ]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{c2d3d763-9e5f-4b7d-9cf9-2843f0b78933}",
+      "strict_min_version": "109.0"
+    }
+  }
 }
