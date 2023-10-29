@@ -1,11 +1,18 @@
 {
   "manifest_version": 3,
   "name": "Hatena Keyword Remover",
-  "version": "1.5",
+  "version": "1.5.1",
   "description": "Removes Hatena Keyword Links and search keyword highlight",
   "icons": {
+    "48": "icon48.png",
     "96": "icon96.png",
     "128": "icon128.png"
+  },
+  "action": {
+    "default_icon": {
+      "32": "button32.png"
+    },
+    "default_title": "HKR"
   },
   "content_scripts": [
     {
