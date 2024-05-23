@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Hatena Keyword Remover",
-  "version": "1.5.2",
+  "version": "1.5.3",
   "description": "Removes Hatena Keyword Links and search keyword highlight",
   "icons": {
     "48": "icon48.png",

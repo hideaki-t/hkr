@@ -4,8 +4,8 @@ if (
   reg.test(document.documentElement.attributes["data-blog"].value.replace(/^[^.]+./, ""))
 ) {
   const r = document.createRange();
-  document.querySelectorAll("span.highlight,a.keyword,a.okeyword").forEach((v) => {
+  for (const v of document.querySelectorAll("span.highlight,a.keyword,a.okeyword")) {
     r.selectNodeContents(v);
     v.parentNode.replaceChild(r.extractContents(), v);
-  });
+  }
 }
