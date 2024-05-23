@@ -1,8 +1,3 @@
-const manifest = chrome.runtime.getManifest();
-const permissions = { "origins": manifest.host_permissions };
-if (!await chrome.permissions.contains(permissions)) {
-     await chrome.permissions.request(permissions);
-}
 const reg = /^hate(?:na(?:\.ne\.jp|blog\.com|diary\.(?:com|jp))|labo\.jp|blo\.jp)/;
 if (
   reg.test(location.hostname.replace(/^[^.]+./, "")) ||

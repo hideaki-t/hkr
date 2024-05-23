@@ -24,9 +24,6 @@
       ]
     }
   ],
-  "host_permissions": [
-    "https://*/*"
-  ],
   "browser_specific_settings": {
     "gecko": {
       "id": "{c2d3d763-9e5f-4b7d-9cf9-2843f0b78933}",
