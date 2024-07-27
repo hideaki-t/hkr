@@ -1,4 +1,4 @@
-const reg = /^hate(?:na(?:\.ne\.jp|blog\.com|diary\.(?:com|jp))|labo\.jp|blo\.jp)/;
+const reg = /^hate(?:na(?:\.ne\.jp|blog\.(?:com|jp)|diary\.(?:com|jp))|labo\.jp|blo\.jp)$/;
 if (
   reg.test(location.hostname.replace(/^[^.]+./, "")) ||
   reg.test(document.documentElement.attributes["data-blog"].value.replace(/^[^.]+./, ""))
